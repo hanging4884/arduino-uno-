@@ -1,0 +1,1 @@
+#define PIR 10#define LED 6void setup() {   pinMode(PIR,INPUT);   pinMode(LED,OUTPUT);      Serial.begin(9600);   Serial.println("START....");}void loop() {    if(digitalRead(PIR)==HIGH)digitalWrite(LED,HIGH);  else digitalWrite(LED,LOW);  delay(200);}
